@@ -173,13 +173,17 @@ IF EXIST "..\bin\Dist-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I ".
     <ClInclude Include="src\ClayPOT\CPCreator.h" />
     <ClInclude Include="src\ClayPOT\ClayPOT.h" />
     <ClInclude Include="src\ClayPOT\EntryPoint.h" />
+    <ClInclude Include="src\ClayPOT\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\ClayPOT\Events\Event.h" />
     <ClInclude Include="src\ClayPOT\Log.h" />
+    <ClInclude Include="src\ClayPOT\Platform\Window.h" />
     <ClInclude Include="src\ClayPOT\macros.h" />
     <ClInclude Include="src\cph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ClayPOT\CPCreator.cpp" />
     <ClCompile Include="src\ClayPOT\Log.cpp" />
+    <ClCompile Include="src\ClayPOT\Platform\Window.cpp" />
     <ClCompile Include="src\cph.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

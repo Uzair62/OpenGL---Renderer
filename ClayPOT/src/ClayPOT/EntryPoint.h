@@ -9,9 +9,7 @@ int main(int argc, char** argv)
 {
 
 	cp::Log::init();
-
 	CP_CORE_INFO("Initialized Log!");
-
 
 	auto app = cp::CreateApplication();
 	CP_CORE_INFO("Created Application!");

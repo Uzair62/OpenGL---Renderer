@@ -4,6 +4,12 @@
     <Filter Include="ClayPOT">
       <UniqueIdentifier>{61A9492C-CD88-C8C7-D6A0-539E42FF2E29}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ClayPOT\Events">
+      <UniqueIdentifier>{25DE1826-11AC-0C2C-FA3F-7D52E6ACE890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClayPOT\Platform">
+      <UniqueIdentifier>{D502E72B-C1FB-057E-EA2D-EB02D685E589}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ClayPOT\CPCreator.h">
@@ -15,8 +21,17 @@
     <ClInclude Include="src\ClayPOT\EntryPoint.h">
       <Filter>ClayPOT</Filter>
     </ClInclude>
+    <ClInclude Include="src\ClayPOT\Events\ApplicationEvent.h">
+      <Filter>ClayPOT\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ClayPOT\Events\Event.h">
+      <Filter>ClayPOT\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\ClayPOT\Log.h">
       <Filter>ClayPOT</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ClayPOT\Platform\Window.h">
+      <Filter>ClayPOT\Platform</Filter>
     </ClInclude>
     <ClInclude Include="src\ClayPOT\macros.h">
       <Filter>ClayPOT</Filter>
@@ -29,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="src\ClayPOT\Log.cpp">
       <Filter>ClayPOT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ClayPOT\Platform\Window.cpp">
+      <Filter>ClayPOT\Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\cph.cpp" />
   </ItemGroup>

@@ -94,7 +94,9 @@ project "Editor"
 
     includedirs {
         "ClayPOT/vendor/spdlog/include",
-        "ClayPOT/src"
+        "ClayPOT/src",
+        "%{IncludeDir.GLFW}",
+		"%{IncludeDir.glad}"
     }
 
     links { "ClayPOT" }
