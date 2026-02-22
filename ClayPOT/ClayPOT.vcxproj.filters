@@ -15,6 +15,9 @@
     <ClInclude Include="src\ClayPOT\EntryPoint.h">
       <Filter>ClayPOT</Filter>
     </ClInclude>
+    <ClInclude Include="src\ClayPOT\Log.h">
+      <Filter>ClayPOT</Filter>
+    </ClInclude>
     <ClInclude Include="src\ClayPOT\macros.h">
       <Filter>ClayPOT</Filter>
     </ClInclude>
@@ -22,6 +25,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ClayPOT\CPCreator.cpp">
+      <Filter>ClayPOT</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ClayPOT\Log.cpp">
       <Filter>ClayPOT</Filter>
     </ClCompile>
     <ClCompile Include="src\cph.cpp" />

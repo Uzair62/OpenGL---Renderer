@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -98,7 +99,7 @@
     <PostBuildEvent>
       <Command>echo Creating Editor folder if it does not exist...
 if not exist "$(SolutionDir)/bin/Debug-windows-x86_64/Editor/" mkdir "$(SolutionDir)/bin/Debug-windows-x86_64/Editor/"
-echo Copying ClayPOT.dll to Sandbox...
+echo Copying ClayPOT.dll to Editor...
 IF EXIST "..\bin\Debug-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I "..\bin\Debug-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Debug-windows-x86_64\Editor\" &gt; nul) ELSE (xcopy /Q /Y /I "..\bin\Debug-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Debug-windows-x86_64\Editor\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -115,6 +116,7 @@ IF EXIST "..\bin\Debug-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I "
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -130,7 +132,7 @@ IF EXIST "..\bin\Debug-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I "
     <PostBuildEvent>
       <Command>echo Creating Editor folder if it does not exist...
 if not exist "$(SolutionDir)/bin/Release-windows-x86_64/Editor/" mkdir "$(SolutionDir)/bin/Release-windows-x86_64/Editor/"
-echo Copying ClayPOT.dll to Sandbox...
+echo Copying ClayPOT.dll to Editor...
 IF EXIST "..\bin\Release-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I "..\bin\Release-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Release-windows-x86_64\Editor\" &gt; nul) ELSE (xcopy /Q /Y /I "..\bin\Release-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Release-windows-x86_64\Editor\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -147,6 +149,7 @@ IF EXIST "..\bin\Release-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -162,7 +165,7 @@ IF EXIST "..\bin\Release-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I
     <PostBuildEvent>
       <Command>echo Creating Editor folder if it does not exist...
 if not exist "$(SolutionDir)/bin/Dist-windows-x86_64/Editor/" mkdir "$(SolutionDir)/bin/Dist-windows-x86_64/Editor/"
-echo Copying ClayPOT.dll to Sandbox...
+echo Copying ClayPOT.dll to Editor...
 IF EXIST "..\bin\Dist-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I "..\bin\Dist-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Dist-windows-x86_64\Editor\" &gt; nul) ELSE (xcopy /Q /Y /I "..\bin\Dist-windows-x86_64\ClayPOT\ClayPOT.dll" "$(SolutionDir)\bin\Dist-windows-x86_64\Editor\" &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -170,11 +173,13 @@ IF EXIST "..\bin\Dist-windows-x86_64\ClayPOT\ClayPOT.dll"\ (xcopy /Q /E /Y /I ".
     <ClInclude Include="src\ClayPOT\CPCreator.h" />
     <ClInclude Include="src\ClayPOT\ClayPOT.h" />
     <ClInclude Include="src\ClayPOT\EntryPoint.h" />
+    <ClInclude Include="src\ClayPOT\Log.h" />
     <ClInclude Include="src\ClayPOT\macros.h" />
     <ClInclude Include="src\cph.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ClayPOT\CPCreator.cpp" />
+    <ClCompile Include="src\ClayPOT\Log.cpp" />
     <ClCompile Include="src\cph.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

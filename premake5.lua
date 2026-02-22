@@ -46,6 +46,8 @@ project "ClayPOT"
         cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
+        buildoptions { "/utf-8" }
+
         defines {
             "CP_PLATFORM_WINDOWS",
             "CP_BUILD_DLL",
@@ -80,6 +82,7 @@ project "Editor"
     location "Editor"
     kind "ConsoleApp"
     language "C++"
+    buildoptions { "/utf-8" }
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
