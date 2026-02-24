@@ -37,6 +37,7 @@
       <Filter>ClayPOT</Filter>
     </ClInclude>
     <ClInclude Include="src\cph.h" />
+    <ClInclude Include="src\ClayPOT\Modules\Renderer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ClayPOT\CPCreator.cpp">
@@ -49,5 +50,6 @@
       <Filter>ClayPOT\Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\cph.cpp" />
+    <ClCompile Include="src\ClayPOT\Modules\Renderer.cpp" />
   </ItemGroup>
 </Project>

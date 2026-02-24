@@ -1,5 +1,6 @@
 #pragma once
 #include "macros.h"
+#include "ClayPOT/Modules/Renderer.h"
 #include "ClayPOT/Platform/Window.h"
 #include "ClayPOT/Events/ApplicationEvent.h"
 
@@ -19,6 +20,7 @@ namespace cp
 	private:
 
 		void initWindow();
+		
 
 		bool OnWindowClose(WindowCloseEvent& e);
 
